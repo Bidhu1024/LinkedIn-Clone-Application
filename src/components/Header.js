@@ -7,7 +7,9 @@ import NavJob from "../Assets/nav-jobs.svg";
 import NavMess from "../Assets/nav-messaging.svg";
 import NavNet from "../Assets/nav-network.svg";
 import NavNotifi from "../Assets/nav-notifications.svg";
-// import NavWork from "../Assets/nav-work.svg";
+import user from "../Assets/user.svg";
+import drop from "../Assets/down-icon.svg";
+import NavWork from "../Assets/nav-work.svg";
 const Header = (props) => {
   return (
     <Container>
@@ -57,12 +59,28 @@ const Header = (props) => {
                 <span>Notifications</span>
               </a>
             </NavList>
-            {/* <NavList>
+
+            <User>
               <a>
-                <img src={NavWork} alt="NavHome" />
-                <span>Work</span>
+                <img src={user} alt="" width="24px" height="24px"/>
+                <span>Me</span>
+                <img src={drop} alt="" />
               </a>
-            </NavList> */}
+              <SignOut>
+                <a>
+                  Sign out
+                </a>
+              </SignOut>
+            </User>
+            <Work>
+              <a>
+                <img src={NavWork} alt="" />
+                <span>
+                  Work
+                  <img src={drop} alt="" />
+                </span>
+              </a>
+            </Work>
           </NavListWrap>
         </Nav>
       </Content>
@@ -198,4 +216,28 @@ const NavList = styled.li`
   }
 `;
 
+const User = styled(NavList)`
+  a > img{
+      border-radius:50%;
+    }
+  
+
+  span{
+    display: flex;
+    align-items:center;
+  }
+`;
+const Work = styled(User)`
+  
+ border-left: 1px solid rgba(0,0,0,0.3);
+`;
+
+const SignOut = styled.div`
+position:absolute;
+top: 45px;
+background: white;
+border-radius:0 0 5px 5px;
+width: 100px;
+height:40px;
+`;
 export default Header;
