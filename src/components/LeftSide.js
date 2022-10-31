@@ -13,7 +13,7 @@ const LeftSide = (props) => {
 
         </Photo>
         <Link>
-
+          Welcome
         </Link>
       </a>
       <a>
@@ -50,14 +50,36 @@ word-break: break-word;
 
 `;
 const CardBackground = styled.div`
-background-image: `url(${Photo1})` ;
+background: url("../Assets/card-bg.svg");
 background-position:center;
 background-size: 462px;
 height: 54px;
 margin: -12px -12px 0;
 `;
-const Photo = styled.div``
-const Link = styled.div``
+const Photo = styled.div`
+box-shadow: none;
+background-image: url("../Assets/photo.svg");
+width:72px;
+height: 72px;
+box-sizing: border-box;
+background-clip: content-box;
+background-color: red;
+background-position:cneter;
+background-size: 60%;
+background-repeat: no-repeat;
+border: 2px solid white;
+margin: -38px auto 12px;
+border-radius: 50%;
+
+
+`;
+const Link = styled.div`
+font-size: 1rem;
+line-height: 1.5;
+color: rgba(0,0,0,0.9);
+font-weight: 600;
+
+`
 const AddPhotoText = styled.div``
 
 export default LeftSide
