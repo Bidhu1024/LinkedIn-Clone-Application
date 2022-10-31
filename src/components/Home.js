@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import LeftSide from './LeftSide'
+import Main from './Main'
 import App from "./../App";
+import RightSide from './RightSide';
 const Home = (props) => {
   return (
     <Container>
@@ -11,9 +14,9 @@ const Home = (props) => {
         <p>Find talented pros in record time Upwork and keep business moving</p>
       </Section>
       <Layout>
-        <div>left</div>
-        <div>middle</div>
-        <div>right</div>
+        <LeftSide/>
+        <Main/>
+        <RightSide/>
       </Layout>
     </Container>
   );
