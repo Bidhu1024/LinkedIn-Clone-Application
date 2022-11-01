@@ -66,7 +66,8 @@ font-weight: 600;
 const Layout = styled.div`
 display: grid;
 grid-template-areas: "leftside main rightside";
-grid-template-columns: minmax(0, 5fr) minmax(0, 12fr, minmax(300px,7fr));
+/* grid-template-columns: minmax(0, 5fr) minmax(0, 12fr, minmax(300px,7fr)); */
+grid-template-columns:repeat(3,1fr);
 column-gap: 25px;
 row-gap: 25px;
 grid-template-rows: auto;
