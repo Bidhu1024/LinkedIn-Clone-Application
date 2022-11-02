@@ -61,5 +61,7 @@ color: rgba(0,0,0,0.5);
 `;
 
 const FeedList = styled.ul``;
-const Avatar = styled.div``;
+const Avatar = styled.div`
+
+`;
 export default RightSide;
