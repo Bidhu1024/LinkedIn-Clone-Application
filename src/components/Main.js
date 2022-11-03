@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-import event from '../Assets/eventmain.png'
-import article from '../Assets/articlemain.png'
-import mainphoto from '../Assets/photomain.png'
-import mainvideo from '../Assets/videomain.png'
+import event from '../Assets/eventmainclr.png'
+import article from '../Assets/articlemainclr.png'
+import mainphoto from '../Assets/photomainclr.png'
+import mainvideo from '../Assets/videomainclr.png'
 
 import user from '../Assets/user.svg'
 
@@ -19,19 +19,19 @@ const Main = (props) => {
   </div>
 <div>
   <button>
-    <img src={mainphoto} alt="" height="10px" width="15px"/>
+    <img src={mainphoto} alt="" height="15px" width="15px"/>
     <span>Photo</span>
   </button>
   <button>
-    <img src={mainvideo} alt="" height="10px" width="15px" />
+    <img src={mainvideo} alt="" height="15px" width="15px" />
     <span>Video</span>
   </button>
   <button>
-    <img src={event} alt="" height="10px" width="15px"  />
+    <img src={event} alt="" height="15px" width="15px"  />
     <span>Event</span>
   </button>
   <button>
-    <img src={article} alt="" height="10px" width="15px" />
+    <img src={article} alt="" height="15px" width="15px" />
     <span>Article</span>
   </button>
 </div>
