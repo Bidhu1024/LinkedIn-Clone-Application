@@ -3,6 +3,7 @@ import styled from "styled-components";
 import feed from '../Assets/feed-icon.svg'
 import hash from '../Assets/png-transparent-number-sign-hashtag-symbol-others-purple-cross-sign-thumbnail.png';
 import right from '../Assets/right-icon.svg';
+import bannerimg from '../Assets/li_evergreen_jobs_ad_300x250_v1.jpg';
 const RightSide = (props) => {
   return (
     <Container>
@@ -45,6 +46,9 @@ const RightSide = (props) => {
         <img src={right} alt="" />
         </Recommendation>
       </FollowCard>
+      <BannerCard>
+        <img src={bannerimg} alt="" />
+      </BannerCard>
     </Container>
   );
 };
@@ -111,5 +115,15 @@ margin-right: 0.5rem;
 `;
 
 
-const Recommendation = styled.a``;
+const Recommendation = styled.a`
+color: #0a66c2;
+display: flex;
+align-items: center;
+font-size: 0.9rem;
+`;
+const BannerCard = styled(FollowCard)`
+height: 100%;
+width:100%;
+
+`;
 export default RightSide;
