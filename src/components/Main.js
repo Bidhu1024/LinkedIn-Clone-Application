@@ -1,12 +1,41 @@
 import React from 'react'
 import styled from 'styled-components';
+import event from '../Assets/eventmain.png'
+import article from '../Assets/articlemain.png'
+import mainphoto from '../Assets/photomain.png'
+import mainvideo from '../Assets/videomain.png'
+
+import user from '../Assets/user.svg'
+
 const Main = (props) => {
   return (
 <Container>
 <ShareBox>
-  Share
-</ShareBox>
+  
 
+<div>
+  <img src={user} alt="" />
+  <button>Start a Post</button>
+  </div>
+<div>
+  <button>
+    <img src={mainphoto} alt="" height="10px" width="15px"/>
+    <span>Photo</span>
+  </button>
+  <button>
+    <img src={mainvideo} alt="" height="10px" width="15px" />
+    <span>Video</span>
+  </button>
+  <button>
+    <img src={event} alt="" height="10px" width="15px"  />
+    <span>Event</span>
+  </button>
+  <button>
+    <img src={article} alt="" height="10px" width="15px" />
+    <span>Article</span>
+  </button>
+</div>
+</ShareBox>
 </Container>
   )
 }
@@ -31,6 +60,57 @@ flex-direction: column;
 color: #958b7b;
 margin:  0 0 8px;
 background: white;
+div{
+  button{
+    outline: none;
+    color: rgba(0,0,0,0.6);
+    line-height: 1.5;
+    font-size: 14px;
+    min-height: 3rem;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight:600;
 
+  }
+  &:first-child{
+    display:flex;
+    align-items: center;
+    padding: 8px 16px 0 16px;
+
+    img{
+      width: 48px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+
+    }
+    button{
+      margin: 4px 0;
+      flex-grow: 1;
+      border-radius: 35px;
+      padding-left:1rem;
+      border: 1px solid rgba(0,0,0,0.6);
+      background-color: white;
+      text-align: left;
+
+    }
+  }
+  &:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom:4px;
+
+    button{
+      img{
+        margin: 0 4px -2px;
+      }
+      span{
+        color: #70b5f9;
+      }
+    }
+  }
+}
 `;
-export default Main
+export default Main;
