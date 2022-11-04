@@ -3,11 +3,11 @@ const INITIAL_STATE = {
 }
 
 
-const userReducer = (state=INITIAL_STATE, action){
+const userReducer = (state = INITIAL_STATE,action)=>{
     switch(action.type){
         default : 
-        return state
+        return state;
     }
 }
 
-
+export default userReducer;
