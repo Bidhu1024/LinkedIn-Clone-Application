@@ -9,6 +9,9 @@ import user from "../Assets/user.svg";
 import pubg from "../Assets/pubg.jpeg";
 import like from "../Assets/like.png";
 import clap from "../Assets/clap.png";
+import comment from "../Assets/comment.png";
+import share from "../Assets/share.png";
+import send from "../Assets/send.png";
 const Main = (props) => {
   return (
     <Container>
@@ -62,8 +65,8 @@ const Main = (props) => {
           <SocialCounts>
             <li>
               <button>
-                <img src={like} alt="" height = "5px" width="5px" />
-                <img src={clap} alt="" height = "5px" width="5px" />
+                <img src={like} alt="" height = "15px" width="15px" />
+                <img src={clap} alt="" height = "15px" width="15px" />
                 <span>
                   35
                 </span>
@@ -75,6 +78,24 @@ const Main = (props) => {
                 </a>
             </li>
           </SocialCounts>
+          <SocialActions>
+          <button>
+            <img src={like} alt="" height = "15px" width="15px"/>
+            <span>Like</span>
+          </button>
+          <button>
+            <img src={comment} alt=""height = "15px" width="15px" />
+            <span>Comments</span>
+          </button>
+          <button>
+            <img src={share} alt=""height = "15px" width="15px" />
+            <span>Share</span>
+          </button>
+          <button>
+            <img src={send} alt="" height = "15px" width="15px"/>
+            <span>Send</span>
+          </button>
+          </SocialActions>
         </Article>
       </div>
     </Container>
@@ -233,6 +254,41 @@ img{
 `;
 
 const SocialCounts = styled.ul`
+  line-height:1.3;
+  display: flex;
+  align-items: flex-start;
+  overflow: auto;
+  margin: 0 16px;
+  border-bottom: 1px solid #e9e5df;
+  list-style: none;
+  li{
+    margin-right: 5px;
+    font-size: 12px;
+    button{
+      display: flex;
+    }
+  }
+`;
+const SocialActions = styled.div`
+align-items: center;
+display: flex;
+justify-content: flex-start;
+margin: 0;
+min-height: 40px;
+padding: 4px 8px;
 
+button{
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+  color: #0a66c2;
+
+
+  @media (min-width:768px){
+    span{
+      margin-left:8px;
+    }
+  }
+}
 `;
 export default Main;
