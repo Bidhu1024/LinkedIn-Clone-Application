@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import LeftSide from './LeftSide'
 import Main from './Main'
-import App from "./../App";
+
 import RightSide from './RightSide';
 const Home = (props) => {
   return (
     <Container>
       <Section>
         <h5>
-          <a>Hiring in a hurry?</a>
+          <a>Hiring in a hurry? - </a>
         </h5>
         <p>Find talented pros in record time Upwork and keep business moving</p>
       </Section>
