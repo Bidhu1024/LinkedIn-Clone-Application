@@ -3,7 +3,7 @@ import styled from "styled-components";
 import loginLogo from "../Assets/login-logo.svg";
 import hero from '../Assets/login-hero.svg'
 import google from '../Assets/google.svg'
-
+import {connect} from 'react-redux'
 const Login = () => {
   return (
     <Container>
@@ -161,4 +161,8 @@ color: rgba(0, 0, 0, 0.75);
 }
 `;
 
-export default Login;
+const mapStateToProps = (state)=>{
+  return {};
+}
+const mapDispatchToProps = (dispatch)=>({});
+export default connect(mapStateToProps,mapDispatchToProps)(Login);
